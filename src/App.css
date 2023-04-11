@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap");
+
+.header,
+.comparison,
+.text-info,
+.growth,
+.pumps,
+.effects {
+    height: 100vh;
+    width: 100%;
+    --main-color: #7de5ed;
+    --secondary-color: #00d4ff;
+    --tertiary-color: #5da7db;
+    --quaternary-color: #5837d0;
+    --quaternary-hover-color: #3d2592;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+#line1 {
+    background-image: url("./assets/line_1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#line2 {
+    background-image: url("./assets/page2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#growth {
+    background-color: var(--secondary-color);
+}
+
+#line3 {
+    background-image: url("./assets/page3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#line4 {
+    background-image: url("./assets/page4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.button-group {
+    display: inline-block;
+    margin: 0.8rem;
+
+    border: 0.25rem solid var(--quaternary-color) !important;
+    border-radius: 2rem !important;
+}
+
+.button {
+    text-decoration: none !important;
+    color: var(--quaternary-color) !important;
+}
+
+.button:hover {
+    color: var(--quaternary-hover-color) !important;
+    transform: scale(1.1);
+}
+
+#car {
+    background-image: url("./assets/car.svg");
+    background-repeat: no-repeat;
+    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
+    offset-path: path(
+        "M1207,0c0,76,6.36,179.36,75,253,123.77,132.78,312.22,29.28,420,150,118.34,132.55-7.72,370.62,123,461,34.2,23.65,72,28,95,28"
+    );
+    /*loop animation infinitely*/
+    animation: move 10s infinite ease-in-out;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+#car2 {
+    background-image: url("./assets/car.svg");
+    background-repeat: no-repeat;
+    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
+    offset-path: path(
+        "M.5,932.5c96,0,252.55-9.99,422-55,148.03-39.32,218.19-78.29,356-136,259.45-108.65,352.81,66.54,613-27,153.02-55.01,175.79-102.94,352-123,79.76-9.08,140,9,177,9"
+    );
+    /*loop animation infinitely*/
+    animation: move 10s infinite ease-in-out;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+}
+
+#car3 {
+    background-image: url("./assets/car.svg");
+    background-repeat: no-repeat;
+    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
+    offset-path: path(
+        "M.5,420.5c33,0,81.35-24.31,140.5-25.5,148.63-2.98,246.01,82.8,324.5,130.5,289.21,175.78,450.52-55.64,814,116,129.78,61.28,182.36,125.32,347,162,120.3,26.8,229,14,294,14"
+    );
+    /*loop animation infinitely*/
+    animation: move 10s infinite ease-in-out;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+        opacity: 0%;
+    }
+    5% {
+        opacity: 100%;
+    }
+    95% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        offset-distance: 100%;
+    }
+}
+
+.intro {
+    margin-top: 2rem;
+}
+
+.intro-title {
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 8rem;
+    background: -webkit-linear-gradient(
+        var(--quaternary-color),
+        var(--tertiary-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    line-height: 50vh;
+}
+
+.title {
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(
+        var(--quaternary-color),
+        var(--tertiary-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter-group {
+    justify-content: center;
+}
+
+.counter {
+    padding: 100rem;
+}
+
+.counter-text {
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+    height: 80%;
+    width: 100%;
+}
+
+.EV {
+    background-image: url("./assets/electric-car.svg");
+    height: 45rem;
+    width: 45rem;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+.grid-item {
+    height: 3rem;
+    width: 3rem;
+    background-image: url("./assets/station-wagon.svg");
+    background-repeat: no-repeat;
+}
+
+.text-info-subtitle {
+    font-family: "Alkatra", sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin: 0 10rem 0 10rem;
+}
+
+.EV-charger {
+    background-image: url("./assets/ev-charger.svg");
+    height: 50rem;
+    width: 50rem;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+.pumps-grid-item {
+    height: 10rem;
+    width: 10rem;
+    background-image: url("./assets/fuel-pump.svg");
+    background-repeat: no-repeat;
+    color: var(--quaternary-color);
+    grid-column-end: span 3;
+}
+
+.pumps-subtitle {
+    font-family: "Alkatra", sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin: 0 10rem 0 10rem;
+}
+
+#boat {
+    background-image: url("./assets/ship.svg");
+    background-repeat: no-repeat;
+    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
+    offset-path: path(
+        "M.5,575.5c69.58-12.22,175.03-25.65,303-21,216.53,7.87,260.52,58.88,490,77,80.89,6.39,240.12,17.94,438-16,191.53-32.86,242.57-78.03,365-55,36.13,6.8,116.3,26.65,233,31,38.26,1.43,69.86,.79,91,0"
+    );
+    /*loop animation infinitely*/
+    animation: move 10s infinite ease-in-out;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+}
+
+.effects-grid {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    height: 80%;
+    width: 100%;
+}
+
+.effects-grid-item-title {
+    font-family: "Alkatra", sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 0 10rem 0 10rem;
+}
+
+.effects-grid-item-text {
+    font-family: "Alkatra", sans-serif;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    margin: 0 10rem 0 10rem;
+}
+
+.effects-grid-item1-icon {
+    background-image: url("./assets/smoke.svg");
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: 0 10rem 0 10rem;
+}
+
+.effects-grid-item2-icon {
+    background-image: url("./assets/noise-reduction.svg");
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: 0 10rem 0 10rem;
+}
+
+.effects-grid-item3-icon {
+    background-image: url("./assets/renewable-energy.svg");
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: 0 0 0 10rem;
+}
+
+.footer {
+    background-color: var(--quaternary-color);
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
