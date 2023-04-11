@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921 1081">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-3);
+        stroke: #000;
+        stroke-width: 120px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        stroke: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="885.65" y1="80.63" x2="1100.62" y2="1401.41" gradientUnits="userSpaceOnUse">
+      <stop offset=".5" stop-color="#7de5ed"/>
+      <stop offset=".5" stop-color="#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="540.5" x2="1921" y2="540.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#7de5ed"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1=".5" y1="760.73" x2="1920.5" y2="760.73" gradientUnits="userSpaceOnUse">
+      <stop offset=".5" stop-color="#00d4ff"/>
+      <stop offset=".5" stop-color="#7de5ed"/>
+    </linearGradient>
+  </defs>
+  <g id="page2">
+    <rect class="cls-2" x=".5" y=".5" width="1920" height="1080"/>
+    <path class="cls-1" d="M.5,932.5c96,0,252.55-9.99,422-55,148.03-39.32,218.19-78.29,356-136,259.45-108.65,352.81,66.54,613-27,153.02-55.01,175.79-102.94,352-123,79.76-9.08,140,9,177,9"/>
+  </g>
+</svg>
