@@ -17,14 +17,14 @@
     text-align: center;
 }
 
-#line1 {
-    background-image: url("./assets/line_1.svg");
+#page1 {
+    background-image: url("./assets/page1_animated.gif");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#line2 {
-    background-image: url("./assets/page2.svg");
+#page2 {
+    background-image: url("./assets/page2_animated.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,15 +34,15 @@
     background-color: var(--secondary-color);
 }
 
-#line3 {
-    background-image: url("./assets/page3.svg");
+#page3 {
+    background-image: url("./assets/page3_animated.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#line4 {
-    background-image: url("./assets/page4.svg");
+#page4 {
+    background-image: url("./assets/page4_animated.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -64,65 +64,6 @@
 .button:hover {
     color: var(--quaternary-hover-color) !important;
     transform: scale(1.1);
-}
-
-#car {
-    background-image: url("./assets/car.svg");
-    background-repeat: no-repeat;
-    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
-    offset-path: path(
-        "M1207,0c0,76,6.36,179.36,75,253,123.77,132.78,312.22,29.28,420,150,118.34,132.55-7.72,370.62,123,461,34.2,23.65,72,28,95,28"
-    );
-    /*loop animation infinitely*/
-    animation: move 10s infinite ease-in-out;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-}
-
-#car2 {
-    background-image: url("./assets/car.svg");
-    background-repeat: no-repeat;
-    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
-    offset-path: path(
-        "M.5,932.5c96,0,252.55-9.99,422-55,148.03-39.32,218.19-78.29,356-136,259.45-108.65,352.81,66.54,613-27,153.02-55.01,175.79-102.94,352-123,79.76-9.08,140,9,177,9"
-    );
-    /*loop animation infinitely*/
-    animation: move 10s infinite ease-in-out;
-    height: 5rem;
-    width: 5rem;
-    position: absolute;
-}
-
-#car3 {
-    background-image: url("./assets/car.svg");
-    background-repeat: no-repeat;
-    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
-    offset-path: path(
-        "M.5,420.5c33,0,81.35-24.31,140.5-25.5,148.63-2.98,246.01,82.8,324.5,130.5,289.21,175.78,450.52-55.64,814,116,129.78,61.28,182.36,125.32,347,162,120.3,26.8,229,14,294,14"
-    );
-    /*loop animation infinitely*/
-    animation: move 10s infinite ease-in-out;
-    height: 5rem;
-    width: 5rem;
-    position: absolute;
-}
-
-@keyframes move {
-    0% {
-        offset-distance: 0%;
-        opacity: 0%;
-    }
-    5% {
-        opacity: 100%;
-    }
-    95% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        offset-distance: 100%;
-    }
 }
 
 .intro {
@@ -226,20 +167,6 @@
     font-size: 2rem;
     color: white;
     margin: 0 10rem 0 10rem;
-}
-
-#boat {
-    background-image: url("./assets/ship.svg");
-    background-repeat: no-repeat;
-    /*offset-path: path("M20,20 C20,100 200,0 200,100");*/
-    offset-path: path(
-        "M.5,575.5c69.58-12.22,175.03-25.65,303-21,216.53,7.87,260.52,58.88,490,77,80.89,6.39,240.12,17.94,438-16,191.53-32.86,242.57-78.03,365-55,36.13,6.8,116.3,26.65,233,31,38.26,1.43,69.86,.79,91,0"
-    );
-    /*loop animation infinitely*/
-    animation: move 10s infinite ease-in-out;
-    height: 5rem;
-    width: 5rem;
-    position: absolute;
 }
 
 .effects-grid {

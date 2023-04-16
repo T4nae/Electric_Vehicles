@@ -34,8 +34,7 @@ function App() {
     return (
         <>
             <GoTop showGoTop={showGoTop} scrollUp={handleScrollUp} />
-            <div className="header" id="line1">
-                <section className="car" id="car" />
+            <div className="header" id="page1">
                 <Nav />
                 <div className="intro" id="home">
                     <p
@@ -99,8 +98,7 @@ function App() {
                     ))}
                 </div>
             </div>
-            <div className="text-info" id="line2">
-                <section id="car2" />
+            <div className="text-info" id="page2">
                 <p className="title" data-aos="slide-up">
                     Electric Vehicles vs Gasoline Cars
                 </p>
@@ -130,8 +128,7 @@ function App() {
                 <Growth data={growth.Data} />
             </div>
 
-            <div className="text-info" id="line3">
-                <section id="car3" />
+            <div className="text-info" id="page3">
                 <p className="title" data-aos="slide-up">
                     Market Share of Electric Vehicles vs Gasoline Cars
                 </p>
@@ -167,8 +164,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="text-info" id="line4">
-                <section id="boat" />
+            <div className="text-info" id="page4">
                 <p className="title" data-aos="slide-up">
                     Charging Time of Electric Vehicles vs Gasoline Cars
                 </p>
