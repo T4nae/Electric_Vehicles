@@ -34,6 +34,7 @@ function App() {
     return (
         <>
             <GoTop showGoTop={showGoTop} scrollUp={handleScrollUp} />
+
             <div className="header" id="page1">
                 <Nav />
                 <div className="intro" id="home">
@@ -44,24 +45,42 @@ function App() {
                     >
                         Electric Vehicles
                     </p>
-                    <FlipNumbers
-                        play
-                        color="#fff"
-                        background="#5DA7DB"
-                        width={90}
-                        height={90}
-                        perspective={1000}
-                        numbers={`${Math.floor(
-                            evs.evs / 1000000
-                        )}__${Math.floor(
-                            Math.floor(evs.evs % 1000000) / 1000
-                        )}__${Math.floor(evs.evs % 1000)}`}
-                    />
+                    <span className="counter-mobile">
+                        <FlipNumbers
+                            play
+                            height={50}
+                            width={50}
+                            color="#fff"
+                            background="#5DA7DB"
+                            perspective={1000}
+                            numbers={`${Math.floor(
+                                evs.evs / 1000000
+                            )}__${Math.floor(
+                                Math.floor(evs.evs % 1000000) / 1000
+                            )}__${Math.floor(evs.evs % 1000)}`}
+                        />
+                    </span>
+                    <span className="counter-desktop">
+                        <FlipNumbers
+                            play
+                            height={90}
+                            width={90}
+                            color="#fff"
+                            background="#5DA7DB"
+                            perspective={1000}
+                            numbers={`${Math.floor(
+                                evs.evs / 1000000
+                            )}__${Math.floor(
+                                Math.floor(evs.evs % 1000000) / 1000
+                            )}__${Math.floor(evs.evs % 1000)}`}
+                        />
+                    </span>
                     <p className="counter-text">
                         TOTAL WORLDWIDE ELECTRIC VEHICLES
                     </p>
                 </div>
             </div>
+
             <div className="comparison" id="compare">
                 <OnScreen
                     isInView={(inView) =>
@@ -98,6 +117,7 @@ function App() {
                     ))}
                 </div>
             </div>
+
             <div className="text-info" id="page2">
                 <p className="title" data-aos="slide-up">
                     Electric Vehicles vs Gasoline Cars
@@ -113,11 +133,13 @@ function App() {
                     explore the benefits and challenges of EV adoption.
                 </p>
             </div>
+
             <OnScreen
                 isInView={(inView) =>
                     inView ? setGrowth({ Data: Data }) : setGrowth({ Data: "" })
                 }
             />
+
             <div className="growth" id="growth">
                 <p className="title" data-aos="slide-up">
                     Growth of Electric Vehicles vs Use of raw materials
@@ -125,7 +147,14 @@ function App() {
                 <p className="title" data-aos="slide-up">
                     (USD Billion)
                 </p>
-                <Growth data={growth.Data} />
+                <Growth
+                    data={growth.Data}
+                    style={{
+                        width: "100%",
+                        height: "80%",
+                        paddingBottom: "2rem",
+                    }}
+                />
             </div>
 
             <div className="text-info" id="page3">
@@ -236,6 +265,7 @@ function App() {
                     </div>
                 </div>
             </div>
+
             <div className="footer">
                 <p className="footer-text">
                     © 2023 Tanae. All rights reserved.

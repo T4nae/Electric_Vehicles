@@ -28,13 +28,13 @@ export const Data = [
     { name: "2030", "EV market": 351.5, "Raw Material Market": -184.7 },
 ];
 
-export function Growth({ data }) {
+export function Growth({ data: data, style: style = {}}) {
     return (
-        <div style={{ width: "100%", height: "80%", padding: "4rem" }}>
-            <ResponsiveContainer>
+        <div style={style}>
+            <ResponsiveContainer aspect={undefined}>
                 <BarChart
-                    width={1000}
-                    height={500}
+                    width={0}
+                    height={0}
                     align="center"
                     data={data}
                     margin={{
