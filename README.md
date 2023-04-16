@@ -8,16 +8,12 @@ This is the source code for the Electric Vehicle Awareness website. Purpose of t
 - Ravneet Singh - Feedback and suggestions for the website
 - Adwit - Feedback and suggestions for the website
 
-## Under Development
-
-This website is currently under development and not yet Optimized for mobile devices and tablets and  different screen sizes. please use a desktop browser to view the website for now with a screen size of 1920x1080 or higher with 75% zoom for best experience (link Below in how to view the website).
-Please Click video below for a preview of the Website.
-
-[![Website Preview](https://i9.ytimg.com/vi_webp/1kFrQbb7uZI/mqdefault.webp?v=6435855e&sqp=CKyK1qEG&rs=AOn4CLC21uy1zpYue0jtrdU60YYAhRm5XQ)](https://youtu.be/1kFrQbb7uZI)
-
 ## How to View the Website
 
 The website is hosted on GitHub Pages and can be viewed at [https://t4nae.github.io/Electric_Vehicles/](https://t4nae.github.io/Electric_Vehicles/)
+
+webpage preview video
+[![Website Preview](https://i9.ytimg.com/vi_webp/1kFrQbb7uZI/mqdefault.webp?v=6435855e&sqp=CKyK1qEG&rs=AOn4CLC21uy1zpYue0jtrdU60YYAhRm5XQ)](https://youtu.be/1kFrQbb7uZI)
 
 ## Technologies Used
 
